@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="Tiddlywinks World Cup" VerticalAlignment="Top" RenderTransformOrigin="1.094,-5.341" Height="33" Width="210" FontSize="18"/>
+        <Label Content="Teams" HorizontalAlignment="Left" Margin="46,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Players" HorizontalAlignment="Left" Margin="379,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Player Rating" HorizontalAlignment="Left" Margin="678,161,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="678,187,0,0" VerticalAlignment="Top" Width="29" Source="/starsolid.png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="708,187,0,0" VerticalAlignment="Top" Width="32" Source="/starsolid.png"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="738,188,0,0" VerticalAlignment="Top" Width="57" Source="/staroutline.png"/>
+        <ListBox x:Name="lbxTeams" Margin="46,174,486,38"/>
+        <ListBox x:Name="lbxPlayers" Margin="335,174,198,47"/>
+        <Label Content="Record Result" HorizontalAlignment="Left" Margin="680,255,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnWin" Content="Win" HorizontalAlignment="Left" Margin="695,286,0,0" VerticalAlignment="Top" Width="53"/>
+        <Button x:Name="btnLoss" Content="Loss" HorizontalAlignment="Left" Margin="695,324,0,0" VerticalAlignment="Top" Width="53"/>
+        <Button x:Name="btnDraw" Content="Draw" HorizontalAlignment="Left" Margin="695,359,0,0" VerticalAlignment="Top" Width="53"/>
+
     </Grid>
 </Window>
