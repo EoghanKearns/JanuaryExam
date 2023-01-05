@@ -22,6 +22,8 @@ namespace Q1
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Player> Players = new List<Player>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -51,7 +53,6 @@ namespace Q1
             lbxTeams.ItemsSource = teams;
 
             // create players
-           List<Player> players = new List<Player>();
 
             //French players
             Player p1 = new Player() { Name = "Marie", ResultRecord = "WWDDL" };
@@ -69,15 +70,15 @@ namespace Q1
             Player p9 = new Player() { Name = "Pablo", ResultRecord = "DDDDD" };
 
             // add players to players list
-            players.Add(p1);
-            players.Add(p2);
-            players.Add(p3);
-            players.Add(p4);
-            players.Add(p5);
-            players.Add(p6);
-            players.Add(p7);
-            players.Add(p8);
-            players.Add(p9);
+            Players.Add(p1);
+            Players.Add(p2);
+            Players.Add(p3);
+            Players.Add(p4);
+            Players.Add(p5);
+            Players.Add(p6);
+            Players.Add(p7);
+            Players.Add(p8);
+            Players.Add(p9);
 
             // add players to teams
             t1.Players.Add(p1);
@@ -90,8 +91,13 @@ namespace Q1
             t3.Players.Add(p8);
             t3.Players.Add(p9);
 
-
+            lbxPlayers.ItemsSource = Players;
             return teams;
+        }
+
+        private void lbxTeams_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            GetData();
         }
     }
 }

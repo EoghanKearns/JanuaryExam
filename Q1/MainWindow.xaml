@@ -18,7 +18,7 @@
         <Image HorizontalAlignment="Left" Height="25" Margin="612,187,0,0" VerticalAlignment="Top" Width="29" Source="/starsolid.png" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="25" Margin="642,187,0,0" VerticalAlignment="Top" Width="32" Source="/starsolid.png" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="24" Margin="672,188,0,0" VerticalAlignment="Top" Width="57" Source="/staroutline.png" Grid.Column="1"/>
-        <ListBox x:Name="lbxTeams" Margin="46,174,486,38" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="lbxTeams" Margin="46,174,486,38" Grid.ColumnSpan="2" SelectionChanged="lbxTeams_SelectionChanged"/>
         <ListBox x:Name="lbxPlayers" Margin="269,174,198,47" Grid.Column="1"/>
         <Label Content="Record Result" HorizontalAlignment="Left" Margin="614,255,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Button x:Name="btnWin" Content="Win" HorizontalAlignment="Left" Margin="629,286,0,0" VerticalAlignment="Top" Width="53" Grid.Column="1"/>
