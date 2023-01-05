@@ -10,5 +10,11 @@ namespace Q1
     {
         public string Name { get; set; }
         public List<Player> Players { get; set; }
+
+        // converts team names to strings
+        public override string ToString()
+        {
+            return $"{Name.ToString()}";
+        }
     }
 }
